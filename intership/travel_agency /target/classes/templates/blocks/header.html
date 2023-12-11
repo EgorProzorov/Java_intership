@@ -1,0 +1,14 @@
+
+<div th:fragment="header">
+    <div class="container">
+        <header>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Main</a></li>
+                <li class="nav-item"><a th:href="@{|/${table}/uploadPage|}" class="nav-link">Upload data</a></li>
+                <li class="nav-item"><a th:href="@{|/${table}/edit|}" class="nav-link">Edit data</a></li>
+                <li class="nav-item"><a th:href="@{|/${table}/delete|}" class="nav-link">Delete data</a></li>
+                <li class="nav-item"><a th:href="@{|/${table}/add|}" class="nav-link">Add Data</a></li>
+            </ul>
+        </header>
+    </div>
+</div>

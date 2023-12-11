@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Page</title>
+</head>
+<body>
+<h1>Data Page</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Second Name</th>
+        <th>Email</th>
+        <th>Password</th>
+    </tr>
+    <tr th:each="data : ${dataList}">
+        <td th:text="${data.id}"></td>
+        <td th:text="${data.First_Name}"></td>
+        <td th:text="${data.Second_Name}"></td>
+        <td th:text="${data.email}"></td>
+        <td th:text="${data.pass}"></td>
+    </tr>
+</table>
+</body>
+</html>
